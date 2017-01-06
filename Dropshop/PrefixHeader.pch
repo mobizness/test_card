@@ -1,0 +1,39 @@
+//
+//  PrefixHeader.pch
+//  DROPSHOP
+//
+//  Created by mac on 28/11/15.
+//  Copyright © 2015 Robert. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import <Availability.h>
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import <SystemConfiguration/SystemConfiguration.h>
+#import <Social/Social.h>
+
+#pragma mark - Common headers
+#import "MBProgressHUD.h"
+
+
+#pragma mark - Initial Headers
+#import "AppConstant.h"
+#import "AppData.h"
+
+#pragma mark - Dropshop
+#import "SocialManager.h"
+
+#endif
+
+#define SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(v)  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedAscending)
+#define IS_OS_8_OR_LATER ([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0)
+
+#endif /* PrefixHeader_pch */
