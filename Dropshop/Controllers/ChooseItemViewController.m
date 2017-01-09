@@ -129,8 +129,8 @@ static const int MAX_BUFFER_SIZE = 2; //%%% max number of cards loaded at any gi
     
     [[SocialManager sharedManager] GetAttachment:@"name,url"
                                    member_fields:@"fullname"
-                                             key:@"2b6602b588c0c71aa989fcbc42d1b2c7"
-                                           token:@"6dc98fc9641e08d5cb36be66ec097042789f598de06690e8bdc3b6289663270a"
+                                             key:@"b02ffe63117eb625ab2fc0d802c0f97a"
+                                           token:@"db6507d11324f59fe4519ce716a81d37e200e54aed43c6a8819125bbb8336a4c"
                                           cardid:[cardid objectForKey:@"id"]
                                    successed:successed
                                      failure:failure];
@@ -283,9 +283,9 @@ static const int MAX_BUFFER_SIZE = 2; //%%% max number of cards loaded at any gi
     
     nSelIdx = 0;
     nIdx = 0;
-    [self loadEvents];
+//    [self loadEvents];
 //    [arrThemeData removeAllObjects];
-//    [self getThemeList];
+    [self getThemeList];
     
 //    [_tblCard reloadData];
 }

@@ -25,7 +25,7 @@
 //#define API_BASE_URL                @"http://10.0.1.139:9800/api/"
 #define API_BASE_URL                  @"https://api.trello.com/1/"
 
-#define API_GET_THEMES                              @"lists/5865ccb5d4bdd49b27e72214/cards"
+#define API_GET_THEMES                              @"lists/58730a293b5a6abf4aec3912/cards"
 
 
 
